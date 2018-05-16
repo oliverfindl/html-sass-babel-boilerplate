@@ -1,0 +1,40 @@
+{
+	"name": "html-sass-babel-boilerplate",
+	"version": "1.0.0",
+	"description": "Simple boilerplate for building your web app with node-sass and babel-cli.",
+	"main": "",
+	"scripts": {
+		"build": "npm run build:css && npm run build:js",
+		"build:css": "node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed",
+		"watch:css": "node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch",
+		"build:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify",
+		"watch:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/oliverfindl/html-sass-babel-boilerplate.git"
+	},
+	"keywords": [
+		"html",
+		"sass",
+		"node-sass",
+		"babel",
+		"babel-cli",
+		"babel-preset-env",
+		"babel-preset-minify",
+		"boilerplate",
+		"html-sass-babel-boilerplate"
+	],
+	"author": "Oliver Findl",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/oliverfindl/html-sass-babel-boilerplate/issues"
+	},
+	"homepage": "https://github.com/oliverfindl/html-sass-babel-boilerplate#readme",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-minify": "^0.4.3",
+		"node-sass": "^4.9.0"
+	}
+}
