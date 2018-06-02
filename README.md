@@ -9,7 +9,7 @@ Simple boilerplate for building your web app with [node-sass](https://github.com
 
 ## Install
 
-``` bash
+```bash
 # Clone repository from GitHub to <folder-name>
 $ git clone https://github.com/oliverfindl/html-sass-babel-boilerplate <folder-name>
 
@@ -25,7 +25,7 @@ $ npm update
 
 ## Usage
 
-``` bash
+```bash
 # Build and minify both resources
 $ npm run build
 

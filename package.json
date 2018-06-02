@@ -1,6 +1,6 @@
 {
 	"name": "html-sass-babel-boilerplate",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple boilerplate for building your web app with node-sass and babel-cli.",
 	"main": "",
 	"scripts": {
