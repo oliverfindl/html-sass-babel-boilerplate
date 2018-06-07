@@ -1,12 +1,12 @@
 {
 	"name": "html-sass-babel-boilerplate",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Simple boilerplate for building web app with babel-cli and node-sass.",
 	"main": "",
 	"scripts": {
 		"build": "npm run build:css && npm run build:js",
-		"build:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify",
-		"watch:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify --watch",
+		"build:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify,stage-2",
+		"watch:js": "babel src/js/main.js --out-file dist/js/main.min.js --presets=env,minify,stage-2 --watch",
 		"build:css": "node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed",
 		"watch:css": "node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch"
 	},
@@ -35,6 +35,7 @@
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-minify": "^0.4.3",
+		"babel-preset-stage-2": "^6.24.1",
 		"node-sass": "^4.9.0"
 	}
 }
