@@ -1,3 +1,23 @@
 @charset "utf-8";
 
-/* YOUR CODE HERE */
+@import "variables";
+@import "functions";
+
+html {
+	& > body {
+		$primary-color: color("primary");
+
+		::placeholder {
+			color: $primary-color;
+		}
+
+		button {
+			$padding: 3px;
+
+			background-color: $primary-color;
+			color: color("light");
+			border: none;
+			padding: $padding $padding * 2;
+		}
+	}
+}

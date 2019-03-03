@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+@import "variables";
+
+@function color($key) {
+	@return map-get($colors, $key);
+}
