@@ -5,8 +5,8 @@
 	"main": "",
 	"scripts": {
 		"build": "npm run build:css && npm run build:js",
-		"build:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --presets=minify,stage-2,env",
-		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --presets=minify,stage-2,env --watch",
+		"build:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env",
+		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
 		"build:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed",
 		"watch:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch"
 	},
@@ -32,10 +32,9 @@
 	},
 	"homepage": "https://github.com/oliverfindl/html-sass-babel-boilerplate#readme",
 	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.7.0",
-		"babel-preset-minify": "^0.5.0",
-		"babel-preset-stage-2": "^6.24.1",
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.3.4",
+		"@babel/preset-env": "^7.3.4",
 		"node-sass": "^4.9.3"
 	}
 }
