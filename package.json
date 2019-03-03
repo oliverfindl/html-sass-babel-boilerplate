@@ -7,7 +7,7 @@
 		"build": "npm run build:css && npm run build:js",
 		"build:js": "npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env",
 		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
-		"build:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed",
+		"build:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed && npx postcss dist/css/main.min.css --use autoprefixer --no-map --output dist/css/main.min.css",
 		"watch:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch",
 		"lint:js": "npx eslint src/js/main.js",
 		"lint:js:fix": "npx eslint src/js/main.js --fix"
@@ -37,7 +37,9 @@
 		"@babel/cli": "^7.2.3",
 		"@babel/core": "^7.3.4",
 		"@babel/preset-env": "^7.3.4",
+		"autoprefixer": "^9.4.9",
 		"eslint": "^5.15.0",
-		"node-sass": "^4.9.3"
+		"node-sass": "^4.11.0",
+		"postcss-cli": "^6.1.2"
 	}
 }
