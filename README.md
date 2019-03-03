@@ -52,17 +52,19 @@ $ lint:js:fix
 ## Structure
 
 ```bash
-.                       # root
-├── dist                # directory for distributables 
-│   ├── css             # directory for minified css files
-│   └── js              # directory for minified js files
-├── src                 # directory for source code
-│   ├── js              # directory for js files
-│   │   └── main.js     # main js file
-│   └── scss            # directory for scss files
-│       └── main.scss   # main scss file
-├── index.html          # index file for web app
-└── package.json        # npm configuration file
+.                           # root
+├── dist                    # directory for distributables 
+│   ├── css                 # directory for minified css files
+│   └── js                  # directory for minified js files
+├── src                     # directory for source code
+│   ├── js                  # directory for js files
+│   │   └── main.js         # main js file
+│   └── scss                # directory for scss files
+│       ├── functions.scss  # scss file for functions
+│       ├── main.scss       # main scss file
+│       └── variables.scss  # scss file for variables
+├── index.html              # index file for web app
+└── package.json            # npm configuration file
 ```
 
 ---
