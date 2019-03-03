@@ -41,22 +41,28 @@ $ npm run build:css
 
 # Watch for changes in main.scss file
 $ npm run watch:css
+
+# Lint main.js file
+$ lint:js
+
+# Fix main.js file
+$ lint:js:fix
 ```
 
 ## Structure
 
-```
+```bash
 .                       # root
 ├── dist                # directory for distributables 
-│   ├── css             # directory for minified css
-│   └── js              # directory for minified js
+│   ├── css             # directory for minified css files
+│   └── js              # directory for minified js files
 ├── src                 # directory for source code
 │   ├── js              # directory for js files
 │   │   └── main.js     # main js file
 │   └── scss            # directory for scss files
 │       └── main.scss   # main scss file
 ├── index.html          # index file for web app
-└── package.json        # configuration file for npm
+└── package.json        # npm configuration file
 ```
 
 ---
