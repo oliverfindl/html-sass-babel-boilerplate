@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/github/license/oliverfindl/html-sass-babel-boilerplate.svg?style=flat)
 [![paypal](https://img.shields.io/badge/donate-paypal-blue.svg?colorB=0070ba&style=flat)](https://paypal.me/oliverfindl)
 
-Simple boilerplate for building web app with [babel-cli](https://github.com/babel/babel/tree/master/packages/babel-cli) and [node-sass](https://github.com/sass/node-sass).
+Simple boilerplate for building web app with [node-sass](https://github.com/sass/node-sass) and [@babel/cli](https://github.com/babel/babel/tree/master/packages/babel-cli).
 
 ---
 
