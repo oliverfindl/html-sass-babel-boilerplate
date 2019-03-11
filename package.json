@@ -5,10 +5,10 @@
 	"main": "",
 	"scripts": {
 		"build": "npm run build:css && npm run build:js",
-		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env",
-		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
 		"build:css": "npx rimraf dist/css/*.css && npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed && npx postcss dist/css/main.min.css --output dist/css/main.min.css --use autoprefixer --no-map",
 		"watch:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch",
+		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env",
+		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
 		"lint:js": "npx eslint src/js/main.js",
 		"lint:js:fix": "npx eslint src/js/main.js --fix"
 	},
