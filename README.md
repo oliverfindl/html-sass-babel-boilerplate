@@ -53,7 +53,7 @@ $ lint:js:fix
 
 ```bash
 .                           # root
-├── dist                    # directory for distributables 
+├── dist                    # directory for distributables
 │   ├── css                 # directory for minified css files
 │   └── js                  # directory for minified js files
 ├── src                     # directory for source code
@@ -64,7 +64,8 @@ $ lint:js:fix
 │       ├── main.scss       # main scss file
 │       └── variables.scss  # scss file for variables
 ├── index.html              # index file for web app
-└── package.json            # npm configuration file
+├── package.json            # npm configuration file
+└── purgecss.config.js      # purgecss configuration file
 ```
 
 ---
