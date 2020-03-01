@@ -7,10 +7,11 @@
 		"build": "npm run build:css && npm run build:js",
 		"build:css": "npx rimraf dist/css/*.css && npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed && npx postcss dist/css/main.min.css --output dist/css/main.min.css --no-map",
 		"watch:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch",
-		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env",
+		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env && terser --compress --mangle --output dist/js/main.min.js -- dist/js/main.min.js",
 		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
 		"lint:js": "npx eslint src/js/main.js",
-		"lint:js:fix": "npx eslint src/js/main.js --fix"
+		"lint:js:fix": "npx eslint src/js/main.js --fix",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
@@ -44,6 +45,7 @@
 		"eslint": "^6.8.0",
 		"node-sass": "^4.13.1",
 		"postcss-cli": "^7.1.0",
-		"rimraf": "^3.0.2"
+		"rimraf": "^3.0.2",
+		"terser": "^4.6.4"
 	}
 }
