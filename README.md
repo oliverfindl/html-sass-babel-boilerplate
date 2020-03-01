@@ -1,6 +1,6 @@
 # html-sass-babel-boilerplate
 
-![license](https://img.shields.io/github/license/oliverfindl/html-sass-babel-boilerplate.svg?style=flat)
+[![license](https://img.shields.io/github/license/oliverfindl/html-sass-babel-boilerplate.svg?style=flat)][mit]
 [![paypal](https://img.shields.io/badge/donate-paypal-blue.svg?colorB=0070ba&style=flat)](https://paypal.me/oliverfindl)
 
 Simple boilerplate for building web app with [node-sass](https://github.com/sass/node-sass) and [@babel/cli](https://github.com/babel/babel/tree/master/packages/babel-cli).
@@ -72,4 +72,6 @@ $ lint:js:fix
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT][mit]
+
+[mit]: https://opensource.org/licenses/MIT
