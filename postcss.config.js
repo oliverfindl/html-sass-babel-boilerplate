@@ -9,7 +9,8 @@ module.exports = {
 		purgecss({
 			content: ["index.html"],
 			keyframes: true,
-			fontFace: true
+			fontFace: true,
+			variables: true
 		})
 	]
 };
