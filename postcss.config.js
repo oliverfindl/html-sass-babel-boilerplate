@@ -7,7 +7,7 @@ module.exports = {
 	plugins: [
 		autoprefixer(),
 		purgecss({
-			content: ["index.html"],
+			content: [ "index.html" ],
 			keyframes: true,
 			fontFace: true,
 			variables: true
