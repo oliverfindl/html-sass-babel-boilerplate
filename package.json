@@ -22,13 +22,12 @@
 	"keywords": [
 		"html",
 		"sass",
-		"node-sass",
 		"postcss",
 		"autoprefixer",
 		"purgecss",
 		"babel",
-		"babel7",
 		"eslint",
+		"stylelint",
 		"boilerplate",
 		"html-sass-babel-boilerplate"
 	],
