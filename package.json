@@ -5,12 +5,14 @@
 	"main": "",
 	"scripts": {
 		"build": "npm run build:css && npm run build:js",
-		"build:css": "npx rimraf dist/css/*.css && npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed && npx postcss dist/css/main.min.css --output dist/css/main.min.css --no-map",
+		"build:css": "npx rimraf dist/css/*.css && npm run lint:css && npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed && npx postcss dist/css/main.min.css --output dist/css/main.min.css --no-map",
 		"watch:css": "npx node-sass src/scss/main.scss dist/css/main.min.css --output-style=compressed --watch",
 		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env && terser --compress --mangle --output dist/js/main.min.js -- dist/js/main.min.js",
 		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env --watch",
-		"lint:js": "npx eslint src/js/main.js",
-		"lint:js:fix": "npx eslint src/js/main.js --fix",
+		"lint:js": "npx eslint src/js/**/*.js",
+		"lint:js:fix": "npx eslint src/js/**/*.js --fix",
+		"lint:css": "npx stylelint src/scss/**/*.scss",
+		"lint:css:fix": "npx stylelint src/scss/**/*.scss --fix",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -47,6 +49,9 @@
 		"postcss": "^8.1.7",
 		"postcss-cli": "^8.2.0",
 		"rimraf": "^3.0.2",
+		"stylelint": "^13.13.1",
+		"stylelint-config-recommended-scss": "^4.2.0",
+		"stylelint-scss": "^3.19.0",
 		"terser": "^5.3.8"
 	}
 }
